@@ -23,34 +23,34 @@ body {
   width: 90%;
 }
 
-.login-form {
+.form-container {
   flex: 1;
   padding: 50px 40px;
 }
 
-.login-form h2 {
+.form-container h2 {
   font-weight: bold;
   margin-bottom: 10px;
   color: #333;
 }
 
-.login-form p {
+.form-container p {
   margin-bottom: 25px;
   color: #666;
 }
 
-.login-form a {
+.form-container a {
   color: #5d5dfd;
   text-decoration: none;
 }
 
-.login-form label {
+.form-container label {
   display: block;
   margin: 15px 0 5px;
   color: #333;
 }
 
-.login-form input {
+.form-container input {
   width: 100%;
   padding: 12px;
   border: 2px solid #bcdfff;
@@ -87,7 +87,7 @@ button:hover {
   background: #4c4cf0;
 }
 
-.login-image {
+.image-container {
   flex: 1;
   background: #f2f8ff;
   display: flex;
@@ -95,7 +95,7 @@ button:hover {
   justify-content: center;
 }
 
-.login-image img {
+.image-container img {
   width: 80%;
   max-width: 400px;
 }
@@ -104,7 +104,7 @@ button:hover {
   .container {
     flex-direction: column;
   }
-  .login-image {
+  .image-container {
     display: none;
   }
 }
