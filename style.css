@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background: #e7faff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+  overflow: hidden;
+  max-width: 900px;
+  width: 90%;
+}
+
+.login-form {
+  flex: 1;
+  padding: 50px 40px;
+}
+
+.login-form h2 {
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.login-form p {
+  margin-bottom: 25px;
+  color: #666;
+}
+
+.login-form a {
+  color: #5d5dfd;
+  text-decoration: none;
+}
+
+.login-form label {
+  display: block;
+  margin: 15px 0 5px;
+  color: #333;
+}
+
+.login-form input {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #bcdfff;
+  border-radius: 25px;
+  background: #f7fcff;
+  outline: none;
+}
+
+.password-box {
+  position: relative;
+}
+
+.password-box .toggle {
+  position: absolute;
+  right: 15px;
+  top: 12px;
+  cursor: pointer;
+}
+
+button {
+  margin-top: 30px;
+  padding: 12px 0;
+  width: 100%;
+  background: #5d5dfd;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #4c4cf0;
+}
+
+.login-image {
+  flex: 1;
+  background: #f2f8ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-image img {
+  width: 80%;
+  max-width: 400px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+  .login-image {
+    display: none;
+  }
+}
