@@ -1,135 +1,216 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
-}
+ body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #e7faff;
+    }
 
-body, html {
-  height: 100%;
-  width: 100%;
-}
+    .collab-section {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: center;
+      background-color: #e7faff;
+      padding: 40px 20px;
+    }
 
-body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: #f1f5f9;
-}
+    .content {
+      flex: 1 1 400px;
+      max-width: 600px;
+      padding: 20px;
+    }
 
-.container {
-  display: flex;
-  height: 100vh;
-  width: 100%;
-}
+    .content h1 {
+      font-family: 'Inter', sans-serif;
+      font-weight: 600;
+      font-size: 32px;
+      line-height: 1.5;
+      color: #1b3058;
+      margin-bottom: 20px;
+    }
 
-.form-container {
-  flex: 1;
-  padding: 150px;
-  background: #ffffff;
-  display: flex;
-  flex-direction: column;
-  gap:1rem;
-  justify-content: center;
-  margin-top: -100px;;
-}
+    .content .bold {
+      font-family: 'Roboto Mono', monospace;
+      font-size: 48px;
+      font-weight: 900;
+      color: #2c57a5;
+      letter-spacing: 2px;
+      display: block;
+      margin-bottom: 10px;
+      text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+    }
 
-.form-container h2 {
-  font-weight: 3000;
-  margin-bottom: 10px;
-  color: #484848;
-}
+    .content h2 {
+      font-size: 28px;
+      font-weight: 600;
+      font-family: Georgia, serif;
+      margin-top: 20px;
+    }
 
-.form-container p {
-  margin-bottom: 10px;
-  color: #666;
-}
+    .content p {
+      margin: 10px 0;
+      font-size: 16px;
+    }
 
-.form-container a {
-  color: #5d5dfd;
-  text-decoration: none;
-}
+    .collab-btn {
+      display: inline-block;
+      margin-top: 20px;
+      background-color: #c3e6ef;
+      color: #000;
+      font-weight: 600;
+      font-style: italic;
+      padding: 12px 24px;
+      border: none;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      border-radius: 4px;
+    }
 
-.form-container label {
-  display: block;
-  font-weight: 600;
-  margin: 15px 0 5px;
-  color: #333;
-}
+    .collab-btn:hover {
+      background-color: #a2d0e5;
+      transform: scale(1.05);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    }
 
-.form-container input {
-  width: 100%;
-  padding: 20px;
-  border: 1px solid #6a91b5;
-  border-radius: 25px;
-  background: #f7fcff;
-  outline: none;
-}
+    .image {
+      flex: 1 1 300px;
+      max-width: 500px;
+      padding: 20px;
+      text-align: center;
+    }
 
-.password-box {
-  position: relative;
-}
+    .image img {
+      max-width: 100%;
+      height: auto;
+    }
 
-.password-box .toggle {
-  position: absolute;
-  right: 15px;
-  top: 12px;
-  cursor: pointer;
-}
+    .about-section {
+      padding: 40px 20px;
+      text-align: center;
+    }
 
-button {
-  margin-top: 30px;
-  padding: 12px 0;
-  width: 250px; 
-  background: #8525c4;
-  color: white;
-  border: none;
-  border-radius: 20px;
-  font-size: 1rem;
-  font-weight: 600;
-  cursor: pointer;
-  transition: background 0.3s, transform 0.2s;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    .about-section h1 {
+      font-size: 40px;
+      font-style: italic;
+      font-weight: 700;
+      margin-bottom: 50px;
+    }
 
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
+    .about-container {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 50px;
+    }
 
-button:hover {
-  background: #6e08b0;
-  transform: translateY(-2px);
-  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
-}
+    .about-image,
+    .about-text {
+      flex: 1 1 300px;
+      max-width: 500px;
+      padding: 20px;
+    }
 
-button:active {
-  transform: translateY(0);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-}
+    .about-image img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
 
+    .about-text {
+      text-align: left;
+    }
 
-.image-container {
-  flex: 1;
-  background: #e6f0ff;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  padding-left: 20px;
-}
+    .about-text h2 {
+      font-size: 24px;
+      font-weight: 700;
+      margin-bottom: 15px;
+    }
 
-.image-container img {
-  width: 100%;
-  max-width: 850px;
-  margin-left: -200px;
-  margin-top: 40px;
-}
+    .about-text p {
+      font-size: 16px;
+      line-height: 1.6;
+    }
 
-@media (max-width: 768px) {
-  .container {
-    flex-direction: column;
-  }
+    .contact {
+      background-color: #2c57a5;
+      color: white;
+      padding: 30px 20px; /* Reduced height */
+      text-align: center;
+    }
 
-  .image-container {
-    display: none;
-  }
-}
+    .contact-info h2 {
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+
+    .contact-info p {
+      font-size: 16px;
+      margin-bottom: 30px;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      text-align: left;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    form input,
+    form textarea {
+      width: 100%;
+      padding: 12px;
+      border: none;
+      font-size: 14px;
+    }
+
+    form textarea {
+      height: 100px;
+      resize: none;
+    }
+
+    form button {
+      width: 120px;
+      padding: 8px 10px;
+      background-color: transparent;
+      color: white;
+      border: 1px solid white;
+      cursor: pointer;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      text-align: left;
+      margin-top: 10px;
+    }
+
+    form button:hover {
+      background-color: white;
+      color: #1b3058;
+    }
+
+    .location-block {
+      background-color: #d3dbe3;
+      color: #1b3058;
+      margin-top: 30px;
+      padding: 20px;
+      border-radius: 6px;
+    }
+
+    .location-block h3 {
+      margin-top: 0;
+      text-transform: uppercase;
+    }
+
+    .location-block a {
+      color: #1b3058;
+      text-decoration: underline;
+    }
+
+    footer {
+      padding: 30px;
+      background-color: #e7faff;
+      text-align: center;
+    }
