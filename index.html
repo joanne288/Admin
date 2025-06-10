@@ -10,7 +10,7 @@
   <div class="container">
     <div class="form-container">
       <h2>WELCOME BACK!</h2>
-      <p>Don't have a account? <a href="#">Sign up</a></p>
+      <p>Don't have an account? <a href="#">Sign up</a></p>
       <form>
         <label>Email</label>
         <input type="email" placeholder="Enter your E-mail id" required />
@@ -18,16 +18,21 @@
         <label>Password</label>
         <div class="password-box">
           <input type="password" placeholder="Enter your password" id="password" required />
-          <span class="toggle" onclick="togglePassword()">👁️</span>
+          <span class="toggle" onclick="togglePassword()"></span>
         </div>
 
         <button type="submit">Sign In</button>
       </form>
     </div>
     <div class="image-container">
-      <img src="laptopimg.jpg" alt="Laptop Image" />
+      <img src="laptopimg2.png" alt="Laptop Image" />
     </div>
   </div>
-  <script src="script.js"></script>
+  <script>
+    function togglePassword() {
+      const pass = document.getElementById("password");
+      pass.type = pass.type === "password" ? "text" : "password";
+    }
+  </script>
 </body>
 </html>
