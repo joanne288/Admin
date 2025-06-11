@@ -88,12 +88,16 @@ form {
 
 
 form button {
+  margin-left: 50px;
   margin-top: 25px;
   padding: 12px;
   background-color: #5b6eff;
   color: white;
   border: none;
   border-radius: 25px;
+  width: 250px;
+  display: flex;
+  justify-content: center;
   cursor: pointer;
   font-size: 16px;
   transition: 0.3s ease;
