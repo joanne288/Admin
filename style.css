@@ -13,13 +13,12 @@ body {
   display: flex;
 <<<<<<< Updated upstream
   flex-wrap: wrap;
-  
   background: #dfe7ff;
   border-radius: 12px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
   max-width: 900px;
 =======
-  justify-content: space-between;
+  justify-content: sp;
   align-items: center;
   padding: 4px;
   height: 100vh;
@@ -27,18 +26,40 @@ body {
   width: 100%;
   overflow: hidden;
 }
-
 .image-section {
+  position: relative;
   flex: 1;
   background: #dfe7ff;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 40px;
+  overflow: hidden;
 }
 
-.image-section img {
-  max-width: 100%;
+.bg-bar {
+  position: absolute;
+  opacity: 0.7;
+  pointer-events: none;
+  z-index: 1; 
+}
+
+.bar1 {
+  top: -30px;
+  left: -40px;
+  width: 220px;
+}
+
+.bar2 {
+  top: -40px;
+  right: -90px;
+  width: 170px;
+}
+
+.lap {
+  position: relative;
+  z-index: 2;
+  max-width: 70%;
   height: auto;
 }
 
@@ -51,7 +72,7 @@ body {
 }
 
 .form-section h2 {
-  margin-bottom: 20px;
+  margin-bottom: 55px;
   color: #333;
   font-size: 17px;
   align-items: center;
@@ -83,6 +104,7 @@ form {
 
 
 form button {
+  margin-top: 25px;
   padding: 12px;
   background-color: #5b6eff;
   color: white;
