@@ -9,6 +9,41 @@ body {
   color: #333;
 }
 
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  font-style: normal;
+}
+
+.poppins-medium {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 40px;
+  font-style: normal;
+}
+
+.poppins-bold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 49px;
+  font-style: normal;
+}
+
+.poppins-light-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  font-style: italic;
+}
+
+.poppins-regular-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  font-style: italic;
+}
+
 
 .collab-section {
   display: flex;
@@ -30,7 +65,7 @@ body {
   font-weight: 600;
   font-size: 32px;
   line-height: 1.5;
-  color: #1b3058;
+  color: #000000;
   margin-bottom: 20px;
 }
 
@@ -45,13 +80,6 @@ body {
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
 }
 
-.content h2 {
-  font-size: 28px;
-  font-weight: 600;
-  font-family: Georgia, serif;
-  margin-top: 20px;
-}
-
 .content p {
   margin: 10px 0;
   font-size: 16px;
@@ -62,9 +90,11 @@ body {
   margin-top: 20px;
   background-color: #c3e6ef;
   color: #000;
-  font-weight: 600;
+  font-weight: 500;
+  font-size: 20px;
+  font-family: 'Poppins', sans-serif;
   font-style: italic;
-  padding: 12px 24px;
+  padding: 16px 32px;
   border: none;
   text-decoration: none;
   transition: all 0.3s ease;
@@ -94,13 +124,6 @@ body {
   text-align: center;
 }
 
-.about-section h1 {
-  font-size: 40px;
-  font-style: italic;
-  font-weight: 700;
-  margin-bottom: 50px;
-}
-
 .about-container {
   display: flex;
   flex-wrap: wrap;
@@ -125,27 +148,8 @@ body {
 .about-text {
   text-align: left;
 }
-
-.about-text h2 {
-  font-size: 24px;
-  font-weight: 700;
-  margin-bottom: 15px;
-}
-
-.about-text p {
-  font-size: 16px;
-  line-height: 1.6;
-}
-
-
-main {
-  padding: 2rem;
-}
-
-
-
 .content-section {
-  max-width: 900px;
+  max-width: 1200px;
   margin: 3rem auto;
   background: white;
   padding: 2rem;
