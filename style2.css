@@ -11,7 +11,7 @@ body {
 .container {
   display: flex;
   max-width: 900px;
-  width: 100%;
+  width: 90%;
 }
 .image-section {
   order:-1;
@@ -23,11 +23,14 @@ body {
   justify-content: center;
   padding: 40px;
   overflow: hidden;
+  animation: fadeSlideIn 1s ease-out forwards
+
 
 }
 
 .laptop{
-  width: 600px;
+  max-width: 600px;
+  width: 200%;
   margin-top: -200px;
   margin-left: 50px;
 }
@@ -35,23 +38,22 @@ body {
   flex: 1;
   margin-top: -40px;
   padding: 40px;
-  width:80%;
+  width:100%;
   min-width: 100px;
+  box-sizing: border-box;
 }
 
 .form-section h2 {
   margin-bottom: 20px;
   color: #333;
   font-size: 17px;
-  align-items: center;
   text-align: center;
   
 }
 
 form {
   display: flex;
-  height: 100%;
-  width:90%;
+  width:100%;
   flex-direction: column;
   gap: 10px;
   font-family: 'Poppins', sans-serif;
@@ -63,12 +65,12 @@ form {
   border-radius: 25px;
   font-size: 16px;
   outline: none;
+  box-sizing: border-box;
 }
 
 
 form button {
-  margin-left: 50px;
-  margin-top: 25px;
+  margin:25px auto 0 auto;
   padding: 12px;
   background-color: #5b6eff;
   color: white;
@@ -79,7 +81,6 @@ form button {
   justify-content: center;
   cursor: pointer;
   font-size: 16px;
-  transition: 0.3s ease;
   font-weight: 600;
   cursor: pointer;
   transition: background 0.3s, transform 0.2s;
@@ -111,8 +112,8 @@ form button:active {
 
 .success-message {
   text-align: center;
-  margin-top: -40px;
-  margin-right: 25px;
+  margin-top: 5px;
+  margin-right: 10px;
   font-size: 16px;
   color: green;
   font-weight: bold;
@@ -123,6 +124,7 @@ form button:active {
   .container {
     flex-direction: column;
     text-align: center;
+    padding: 20px;
   }
 
   .image-section {
@@ -130,6 +132,67 @@ form button:active {
   }
 
   .form-section {
+    margin-top: 0;
     padding: 20px;
+  }
+}
+@media (max-width: 480px) {
+  .form-section {
+    padding: 15px;
+  }
+
+  form input {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  form button {
+    width: 100%;
+    font-size: 15px;
+  }
+
+  .form-section h2 {
+    font-size: 15px;
+  }
+}
+
+@keyframes fadeSlideIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+  }
+
+  .image-section {
+    order: -1;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    animation: fadeSlideIn 1s ease-out forwards;
+  }
+
+  .laptop {
+    max-width: 80%;
+    margin: 0 auto;
+    margin-top: -100px;
+  }
+
+  .form-section {
+    padding: 30px;
+    width: 100%;
+  }
+
+  form button {
+    width: 80%;
   }
 }
