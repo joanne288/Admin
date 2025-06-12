@@ -125,21 +125,53 @@ textarea {
 textarea {
   min-height: 100px;
 }
-
 button {
   background: #007bff;
   color: white;
-  padding: 0.8rem;
+  padding: 0.8rem 1.5rem;
   border: none;
-  border-radius: 6px;
+  border-radius: 4px;
+  width: 250px;
   font-size: 1rem;
   cursor: pointer;
-  transition: background 0.3s;
+  transition: background 0.3s, transform 0.2s;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 button:hover {
-  background: #005dc1;
+  background: #6e08b0;
+  transform: translateY(-2px);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
 }
+
+button:active {
+  transform: translateY(0);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+@keyframes slideInFromRight {
+  from {
+    transform: translateX(100%);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromLeft {
+  from {
+    transform: translateX(-100%);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}
+
 
 footer {
   text-align: center;
