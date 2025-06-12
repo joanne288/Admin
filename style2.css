@@ -101,10 +101,21 @@ form button {
   cursor: pointer;
   font-size: 16px;
   transition: 0.3s ease;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 form button:hover {
-  background-color: #4053e6;
+  background: #4053e6;
+  transform: translateY(-2px);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
+}
+
+form button:active {
+  transform: translateY(0);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
 }
 
 .login-link {
