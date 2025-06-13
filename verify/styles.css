@@ -1,4 +1,4 @@
-/* Global Styles */
+
 * {
     margin: 0;
     padding: 0;
@@ -16,7 +16,7 @@ label {
     font-weight: 400;
 }
 
-/* Layout Wrapper */
+
 .display {
     display: flex;
     flex-wrap: wrap;
@@ -25,7 +25,7 @@ label {
     gap: 40px;
 }
 
-/* Image Section */
+
 .block1 {
     flex: 1 1 300px;
     display: flex;
@@ -38,7 +38,7 @@ label {
     height: 800px;
 }
 
-/* Form Section */
+
 .block2 {
     flex: 1 1 400px;
     padding: 30px;
@@ -52,7 +52,7 @@ label {
     color: #222;
 }
 
-/* Form Styling */
+
 form {
     display: flex;
     flex-direction: column;
@@ -87,7 +87,7 @@ form {
     border: 2px dotted #888;
 }
 
-/* Checkbox */
+
 .checkbox-group {
     display: flex;
     align-items: center;
@@ -99,10 +99,10 @@ form {
     height: 18px;
 }
 
-/* Checkbox */
+
 .checkbox-group {
     display: flex;
-    flex-direction: row; /* Aligns checkbox and label horizontally */
+    flex-direction: row; 
     gap: 10px;
     margin-top: 15px;
 }
@@ -117,7 +117,7 @@ form {
     border-radius: 10px !important;
 }
 
-/* Button Styling */
+
 button[type="submit"] {
     padding: 12px 20px;
     font-size: 1rem;
@@ -133,7 +133,6 @@ button[type="submit"]:hover {
     background-color: #afb2ff;
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
     .display {
         flex-direction: column;
